@@ -1,7 +1,7 @@
 pub fn run(input: &str) {
     let input = parse(input);
-    println!("day 02 - part 1: {}", part_1(&input));
-    println!("day 02 - part 2: {}", part_2(&input));
+    println!("day 02 - part 1: {:?}", crate::rough_time(|| part_1(&input)));
+    println!("day 02 - part 2: {:?}", crate::rough_time(|| part_2(&input)));
 }
 
 #[derive(Clone, Copy)]
