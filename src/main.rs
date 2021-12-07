@@ -2,8 +2,11 @@ mod day01;
 mod day02;
 mod day03;
 mod day04;
+mod day05;
+mod day06;
+mod day07;
 
-static DAYS: &[fn(&str)] = &[day01::run, day02::run, day03::run, day04::run];
+static DAYS: &[fn(&str)] = &[day01::run, day02::run, day03::run, day04::run, day05::run, day06::run, day07::run];
 
 fn rough_time<T>(f: impl FnOnce() -> T) -> (std::time::Duration, T) {
     let now = std::time::Instant::now();
